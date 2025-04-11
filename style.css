@@ -14,4 +14,15 @@
         h5{
             font-family: 'Consolas', sans-serif;
         }
-/* -------------------- -------------------- */
+/* -------------------- HEADER -------------------- */
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 40px 10px 40px;
+}
+    .title{
+        padding: 6px 80px 6px 80px;
+        background-color: var(--title-h1);
+        border-radius: 25px;
+    }
