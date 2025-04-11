@@ -1,0 +1,17 @@
+:root{
+    --title-h1: firebrick;
+    --title-h2: coral;
+    --title-h3: tomato;
+    --title-h4: rgba(205, 92, 92, 0.7); /* INDIAN RED */
+}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: antiquewhite;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+        h5{
+            font-family: 'Consolas', sans-serif;
+        }
+/* -------------------- -------------------- */
