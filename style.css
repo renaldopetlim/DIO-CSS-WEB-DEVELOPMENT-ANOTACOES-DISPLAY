@@ -49,8 +49,12 @@
         border-radius: 25px;
     }
 /* -------------------- DISPLAY -------------------- */
+#display{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
     .flex{
-        margin: 0 40px 0 40px;
+        margin: 0 20px 0 40px;
     }
         .flex h2{
             display: flex;
@@ -73,6 +77,9 @@
             .flex ul{
                 padding: 4px 0 4px 0;
             }
+                .flex li{
+                    margin: 0 0 0 15px;
+                }
             .flex h4{
                 display: flex;
                 justify-content: center;
@@ -92,6 +99,57 @@
                 border-radius: 25px;
             }
             .flex h6{
-                margin: 3px 0 0 0;
-                
+                margin: 3px 0 0 40px; 
+            }
+/* --------------------  -------------------- */
+    .grid{
+        margin: 0 40px 0 20px;
+    }
+        .grid h2{
+            display: flex;
+            justify-content: center;
+            margin: 6px 40px 6px 40px;
+            padding: 4px 40px 4px 40px;
+            width: 25vw;
+            background-color: var(--title-h2);
+            border-radius: 25px;
+        }
+            .grid h3{
+                display: flex;
+                justify-content: center;
+                margin: 6px 75px 6px 75px;
+                padding: 2px 30px 2px 30px;
+                width: 25vw;
+                background-color: var(--title-h3);
+                border-radius: 25px;
+            }
+            .grid ul{
+                padding: 4px 0 4px 0;
+            }
+                .grid li{
+                    margin: 0 0 0 15px;
+                }
+                .grid ul p{
+                    margin: 3px 0 0 25px;
+                }
+            .grid h4{
+                display: flex;
+                justify-content: center;
+                margin: 6px 25px 6px 25px;
+                padding: 2px 30px 2px 30px;
+                width: 16vw;
+                background-color: var(--title-h4);
+                border-radius: 25px;
+            }
+            .grid h5{
+                display: flex;
+                justify-content: center;
+                margin: 6px 25px 6px 25px;
+                padding: 2px 20px 2px 20px;
+                width: 16vw;
+                background-color: var(--title-h5);
+                border-radius: 25px;
+            }
+            .grid h6{
+                margin: 3px 0 0 40px; 
             }

@@ -13,13 +13,12 @@
         <h1 class="title">CSS Web Developer - Posicionamentos e Exibição</h1>
     </header>
 
-    <article>
+    <article id="display">
         <div class="flex">
             <h2>Display: Flex</h2>
             <p>
-                <b>Display: flex</b> em CSS define que o elemento se tornará um container flexível, 
-                ou seja, um Flex Container. Com isso, todos os elementos filhos se tornam Flex 
-                Items e passam a ser posicionados de forma mais dinâmica e controlada.
+                <b>Display: flex</b> em CSS define que o elemento se tornará um container flexível, ou seja, um Flex Container. 
+                Com isso, todos os elementos filhos se tornam Flex Items e passam a ser posicionados de forma mais dinâmica e controlada.
             </p>
             <div>
                 <h3>Principais características:</h3>
@@ -125,8 +124,55 @@
                 </div>
             </div>
         </div>
-        <div>
-
+        <div class="grid">
+            <h2>Display: Grid</h2>
+            <p>
+                O display: grid em CSS é uma propriedade que transforma um elemento em um container de grid, permitindo organizar seus elementos filhos em linhas e colunas de forma precisa e controlada. 
+                É uma das formas mais poderosas de criar layouts responsivos e complexos com CSS.
+            </p>
+            <div>
+                <h3>Vantagens do Grid:</h3>
+                <ul>
+                    <li>Controle total sobre linhas e colunas</li>
+                    <li>Suporte a alinhamento vertical e horizontal</li>
+                    <li>Criação de layouts responsivos com facilidade</li>
+                    <li>Pode ser combinado com outras técnicas como Flexbox</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Propriedades:</h4>
+                <div>
+                    <h5>Template Columns</h5>
+                    <p>
+                        A propriedade grid-template-columns em CSS é usada para definir o número de colunas e o tamanho de cada uma dentro de um container com display: grid.
+                    </p>
+                    <h6>grid-template-columns: valor1 valor2 valor3 ...;</h6>
+                    <ul>
+                        <li><b>px: </b>pixels</li>
+                        <li><b>%: </b>porcentagem</li>
+                        <li><b>fr: </b>fração do espaço disponível</li>
+                        <li><b>auto: </b>tamanho automático baseado no conteúdo</li>
+                        <li><b>min-content</b></li>
+                            <p>
+                                Define o tamanho mínimo necessário para que o conteúdo não quebre ou transborde.<br>
+                                O elemento só vai ocupar o espaço que ele realmente precisa (por exemplo, o menor tamanho de uma palavra sem quebrar).
+                            </p>
+                            <h6>grid-template-columns: min-content;</h6>
+                            <p>se o conteúdo for uma palavra longa, ele só vai ter largura suficiente pra caber essa palavra sem quebrar.</p>
+                        <li><b>max-content: </b></li>
+                            <p>
+                                Define o tamanho máximo que o conteúdo pode ocupar sem quebrar.<br>
+                                Ele estica até mostrar todo o conteúdo em uma linha, sem cortar nem dividir.
+                            </p>
+                            <h6>grid-template-columns: max-content;</h6>
+                            <p>Se tiver várias palavras, ele vai esticar a célula até mostrar tudo em uma linha só, sem quebra.</p>
+                        <li><b>min-content() :</b></li>
+                            <p>Define um intervalo de tamanho entre um mínimo e um máximo.</p>
+                            <h6>grid-template-columns: minmax(200px, 1fr);</h6>
+                            <p>“Essa coluna deve ter no mínimo 200px, mas pode crescer até ocupar 1fr do espaço, se sobrar.”</p>
+                    </ul>
+                </div>
+            </div>
         </div>
     </article>
 </body>
