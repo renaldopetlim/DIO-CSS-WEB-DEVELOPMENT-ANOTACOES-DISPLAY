@@ -17,7 +17,7 @@
         <div class="flex">
             <h2>Display: Flex</h2>
             <p>
-                <b>Display: flex</b> em CSS define que o elemento se tornará um container flexível, ou seja, um Flex Container. 
+                <b>Display: Flex</b> em CSS define que o elemento se tornará um container flexível, ou seja, um Flex Container.
                 Com isso, todos os elementos filhos se tornam Flex Items e passam a ser posicionados de forma mais dinâmica e controlada.
             </p>
             <div>
@@ -42,7 +42,7 @@
                         flex-direction: row;
                     </h6>
                     <ul>
-                        <li>row (padrão): Os itens são dispostos em linha, da esquerda para a direita (padrão).</li>
+                        <li><b>row (padrão): </b>Os itens são dispostos em linha, da esquerda para a direita (padrão).</li>
                         <li>row-reverse: Os itens são dispostos em linha, mas da direita para a esquerda.</li>
                         <li>column: Os itens são dispostos em coluna, de cima para baixo.</li>
                         <li>column-reverse: Os itens são dispostos em coluna, mas de baixo para cima.</li>
@@ -127,7 +127,7 @@
         <div class="grid">
             <h2>Display: Grid</h2>
             <p>
-                O display: grid em CSS é uma propriedade que transforma um elemento em um container de grid, permitindo organizar seus elementos filhos em linhas e colunas de forma precisa e controlada. 
+                O <b>Display: Grid</b> em CSS é uma propriedade que transforma um elemento em um container de grid, permitindo organizar seus elementos filhos em linhas e colunas de forma precisa e controlada.
                 É uma das formas mais poderosas de criar layouts responsivos e complexos com CSS.
             </p>
             <div>
@@ -190,6 +190,37 @@
                         Pode ser utilizado com as mesmas unidades do grid-template-rows.
                     </p>
                     <h6>grid-template-rows: valor1 valor2 valor3 ...;</h6>
+                </div>
+                <div>
+                    <h5>grid-template-areas</h5>
+                    <p>
+                        <b>Grid Template Areas</b> é uma propriedade do CSS Grid que permite criar layouts visuais mais intuitivos e legíveis, nomeando áreas da grade (grid) para facilitar o posicionamento dos elementos.
+                    </p>
+                    <h6>
+                        .container{<br>
+                            &nbsp;&nbsp;&nbsp;grid-template-areas:<br>
+                            &nbsp;&nbsp;&nbsp;"header header"<br>
+                            &nbsp;&nbsp;&nbsp;"menu content"<br>
+                            &nbsp;&nbsp;&nbsp;"footer footer";<br>
+                        }<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.header{ grid-area: header; }<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.menu{ grid-area: menu; }<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.content{ grid-area: content; }<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.footer{ grid-area: footer; }
+                    </h6>
+                    <p>
+                        A grid-template-areas define visualmente onde cada área fica na grade.<br>
+                        Os nomes ("header", "menu", "content", "footer") são arbitrários, mas devem ser consistentes com os usados em grid-area.<br>
+                    </p>
+                </div>
+                <div>
+                    <h5>column-gap, row-gap e gap</h5>
+                    <p><b>column-gap: </b>Define o espaço horizontal entre as colunas do grid.</p>
+                    <h6>column-gap: 20px;</h6>
+                    <p><b>row-gap: </b>Define o espaço vertical entre as linhas do grid.</p>
+                    <h6>row-gap: 30px;</h6>
+                    <p><b>gap: </b>É um atalho que junta os dois:</p>
+                    <h6>gap: 30px 20px; /* row-gap column-gap */</h6>
                 </div>
             </div>
         </div>

@@ -90,7 +90,7 @@
                 border-radius: 25px;
             }
             .flex h5{
-                margin: 6px 25px 6px 40px;
+                margin: 6px 25px 6px 30px;
                 padding: 2px 20px 2px 20px;
                 width: fit-content;
                 background-color: var(--title-h5);
@@ -98,7 +98,7 @@
             }
             .flex h6{
                 margin: 3px 0 0 40px;
-                padding: 0 15px 0 15px;
+                padding: 3px 15px 3px 15px;
                 width: fit-content;
                 background-color: yellowgreen;
                 border-radius: 25px;
@@ -147,7 +147,7 @@
                 border-radius: 25px;
             }
             .grid h5{
-                margin: 6px 25px 6px 40px;
+                margin: 6px 25px 6px 30px;
                 padding: 2px 20px 2px 20px;
                 width: fit-content;
                 background-color: var(--title-h5);
@@ -156,7 +156,7 @@
             .grid h6{
                 margin: 3px 0 0 40px; 
                 padding: 0 0 0 15px;
-                padding: 0 15px 0 15px;
+                padding: 3px 15px 3px 15px;
                 width: fit-content;
                 background-color: yellowgreen;
                 border-radius: 25px;
