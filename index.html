@@ -14,116 +14,145 @@
     </header>
 
     <article id="display">
-        <div class="flex">
-            <h2>Display: Flex</h2>
-            <p>
-                <b>Display: Flex</b> em CSS define que o elemento se tornará um container flexível, ou seja, um Flex Container.
-                Com isso, todos os elementos filhos se tornam Flex Items e passam a ser posicionados de forma mais dinâmica e controlada.
-            </p>
-            <div>
-                <h3>Principais características:</h3>
-                <ul>
-                    <li>Os itens ficam alinhados em uma única linha (por padrão).</li>
-                    <li>É possível mudar o eixo principal (linha ou coluna).</li>
-                    <li>Permite alinhamento e espaçamento fácil entre os itens.</li>
-                    <li>Ideal para layouts responsivos e centralizações.</li>
-                </ul>
+        <div>
+            <div class="flex">
+                <h2>Display: Flex</h2>
+                <p>
+                    <b>Display: Flex</b> em CSS define que o elemento se tornará um container flexível, ou seja, um Flex Container.
+                    Com isso, todos os elementos filhos se tornam Flex Items e passam a ser posicionados de forma mais dinâmica e controlada.
+                </p>
+                <div>
+                    <h3>Principais características:</h3>
+                    <ul>
+                        <li>Os itens ficam alinhados em uma única linha (por padrão).</li>
+                        <li>É possível mudar o eixo principal (linha ou coluna).</li>
+                        <li>Permite alinhamento e espaçamento fácil entre os itens.</li>
+                        <li>Ideal para layouts responsivos e centralizações.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Propriedades:</h4>
+                    <div>
+                        <h5>flex-direction</h5>
+                        <p>
+                            É uma propriedade usada em um container flexível (ou seja, um elemento com display: flex).<br>
+                            para definir a direção principal em que os itens flexíveis serão organizados dentro do container.
+                        </p>
+                        <h6>
+                            display: flex;<br>
+                            flex-direction: row;
+                        </h6>
+                        <ul>
+                            <li><b>row (padrão): </b>Os itens são dispostos em linha, da esquerda para a direita (padrão).</li>
+                            <li><b>row-reverse: </b>Os itens são dispostos em linha, mas da direita para a esquerda.</li>
+                            <li><b>column: </b>Os itens são dispostos em coluna, de cima para baixo.</li>
+                            <li><b>column-reverse: </b>Os itens são dispostos em coluna, mas de baixo para cima.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>justify-content</h5>
+                        <p>
+                            A propriedade justify-content em CSS é usada para alinhar os itens ao longo do eixo principal dentro de um container flexível (display: flex).<br>
+                            Ou seja, ela controla como o espaço extra é distribuído entre os itens (ou ao redor deles), de acordo com a direção definida por flex-direction.
+                        </p>
+                        <h6>
+                            display: flex;<br>
+                            justify-content: center;
+                        </h6>
+                        <ul>
+                            <li><b>flex-start (padrão): </b>Alinha os itens no início do eixo principal (padrão).</li>
+                            <li><b>flex-end: </b>Alinha os itens no final do eixo principal.</li>
+                            <li><b>center: </b>Centraliza os itens.</li>
+                            <li><b>space-between: </b>Distribui os itens com espaço igual entre eles (sem espaço nas bordas).</li>
+                            <li><b>space-around: </b>Distribui os itens com espaço igual ao redor de cada item (metade nas bordas).</li>
+                            <li><b>space-evenly: </b>Distribui os itens com espaço totalmente igual entre todos (incluindo bordas).</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>align-items</h5>
+                        <p>
+                            A propriedade align-items em CSS é usada para alinhar os itens ao longo do eixo transversal (ou eixo cruzado) dentro de um container flex (display: flex).<br>
+                            Enquanto justify-content alinha horizontalmente (no eixo principal), align-items alinha verticalmente (no eixo perpendicular) — a menos que o eixo principal tenha sido alterado com flex-direction.
+                        </p>
+                        <h6>
+                            display: flex;<br>
+                            align-items: center;
+                        </h6>
+                        <ul>
+                            <li><b>stretch (padrão): </b>Os itens se esticam para preencher todo o eixo transversal.</li>
+                            <li><b>flex-start: </b>Alinha os itens ao início do eixo transversal.</li>
+                            <li><b>flex-end: </b>Alinha os itens ao final do eixo transversal.</li>
+                            <li><b>center: </b>Centraliza os itens no eixo transversal.</li>
+                            <li><b>baseline: </b>Alinha os itens pela linha de base do texto.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>align-content</h5>
+                        <p>
+                            A propriedade align-content em CSS é usada para alinhar as linhas do conteúdo flexível ao longo do eixo transversal, somente quando há múltiplas linhas (ou seja, quando o flex container tem flex-wrap: wrap ou wrap-reverse).<br>
+                            Ela é parecida com align-items, mas enquanto align-items alinha os itens individuais, align-content alinha as linhas dos itens.
+                        </p>
+                        <h6>display: flex;<br>
+                            flex-wrap: wrap;<br>
+                            align-content: center;</h6>
+                    </div>
+                    <div>
+                        <h5>flex-wrap</h5>
+                        <p>
+                            A propriedade flex-wrap em CSS define se os itens flexíveis devem ou não quebrar linha quando não houver espaço suficiente no container.<br>
+                            Por padrão, os itens em um container com display: flex ficam em uma única linha. Com flex-wrap, você pode permitir que eles “quebrem” para a próxima linha, como um wrap mesmo — tipo quando o texto pula para baixo ao final da linha.
+                        </p>
+                        <h6>
+                            display: flex;<br>
+                            flex-wrap: wrap;
+                        </h6>
+                        <ul>
+                            <li><b>nowrap (padrão): </b>Todos os itens permanecem em uma única linha, mesmo que transbordem o container.</li>
+                            <li><b>wrap: </b>Os itens quebram para a próxima linha quando necessário (de cima para baixo).</li>
+                            <li><b>wrap-reverse: </b>Os itens também quebram, mas as linhas são empilhadas de baixo para cima (ordem reversa).</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>gap</h5>
+                        <p>
+                            A propriedade gap em CSS é usada para definir o espaçamento entre os itens dentro de containers com display: flex, grid ou inline-flex/grid.<br>
+                            Ela substitui a necessidade de usar margin-right, margin-bottom, etc., entre os itens — deixando o código mais limpo e fácil de manter.
+                        </p>
+                        <h6>
+                            display: flex;<br>
+                            gap: 16px;
+                        </h6>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4>Propriedades:</h4>
+            <div class="block">
                 <div>
-                    <h5>flex-direction</h5>
-                    <p>
-                        É uma propriedade usada em um container flexível (ou seja, um elemento com display: flex).<br>
-                        para definir a direção principal em que os itens flexíveis serão organizados dentro do container.
-                    </p>
-                    <h6>
-                        display: flex;<br>
-                        flex-direction: row;
-                    </h6>
-                    <ul>
-                        <li><b>row (padrão): </b>Os itens são dispostos em linha, da esquerda para a direita (padrão).</li>
-                        <li><b>row-reverse: </b>Os itens são dispostos em linha, mas da direita para a esquerda.</li>
-                        <li><b>column: </b>Os itens são dispostos em coluna, de cima para baixo.</li>
-                        <li><b>column-reverse: </b>Os itens são dispostos em coluna, mas de baixo para cima.</li>
-                    </ul>
+                    <h2>Display: Block</h2>
                 </div>
-                <div>
-                    <h5>justify-content</h5>
-                    <p>
-                        A propriedade justify-content em CSS é usada para alinhar os itens ao longo do eixo principal dentro de um container flexível (display: flex).<br>
-                        Ou seja, ela controla como o espaço extra é distribuído entre os itens (ou ao redor deles), de acordo com a direção definida por flex-direction.
-                    </p>
-                    <h6>
-                        display: flex;<br>
-                        justify-content: center;
-                    </h6>
-                    <ul>
-                        <li><b>flex-start (padrão): </b>Alinha os itens no início do eixo principal (padrão).</li>
-                        <li><b>flex-end: </b>Alinha os itens no final do eixo principal.</li>
-                        <li><b>center: </b>Centraliza os itens.</li>
-                        <li><b>space-between: </b>Distribui os itens com espaço igual entre eles (sem espaço nas bordas).</li>
-                        <li><b>space-around: </b>Distribui os itens com espaço igual ao redor de cada item (metade nas bordas).</li>
-                        <li><b>space-evenly: </b>Distribui os itens com espaço totalmente igual entre todos (incluindo bordas).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>align-items</h5>
-                    <p>
-                        A propriedade align-items em CSS é usada para alinhar os itens ao longo do eixo transversal (ou eixo cruzado) dentro de um container flex (display: flex).<br>
-                        Enquanto justify-content alinha horizontalmente (no eixo principal), align-items alinha verticalmente (no eixo perpendicular) — a menos que o eixo principal tenha sido alterado com flex-direction.
-                    </p>
-                    <h6>
-                        display: flex;<br>
-                        align-items: center;
-                    </h6>
-                    <ul>
-                        <li><b>stretch (padrão): </b>Os itens se esticam para preencher todo o eixo transversal.</li>
-                        <li><b>flex-start: </b>Alinha os itens ao início do eixo transversal.</li>
-                        <li><b>flex-end: </b>Alinha os itens ao final do eixo transversal.</li>
-                        <li><b>center: </b>Centraliza os itens no eixo transversal.</li>
-                        <li><b>baseline: </b>Alinha os itens pela linha de base do texto.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>align-content</h5>
-                    <p>
-                        A propriedade align-content em CSS é usada para alinhar as linhas do conteúdo flexível ao longo do eixo transversal, somente quando há múltiplas linhas (ou seja, quando o flex container tem flex-wrap: wrap ou wrap-reverse).<br>
-                        Ela é parecida com align-items, mas enquanto align-items alinha os itens individuais, align-content alinha as linhas dos itens.
-                    </p>
-                    <h6>display: flex;<br>
-                        flex-wrap: wrap;<br>
-                        align-content: center;</h6>
-                </div>
-                <div>
-                    <h5>flex-wrap</h5>
-                    <p>
-                        A propriedade flex-wrap em CSS define se os itens flexíveis devem ou não quebrar linha quando não houver espaço suficiente no container.<br>
-                        Por padrão, os itens em um container com display: flex ficam em uma única linha. Com flex-wrap, você pode permitir que eles “quebrem” para a próxima linha, como um wrap mesmo — tipo quando o texto pula para baixo ao final da linha.
-                    </p>
-                    <h6>
-                        display: flex;<br>
-                        flex-wrap: wrap;
-                    </h6>
-                    <ul>
-                        <li><b>nowrap (padrão): </b>Todos os itens permanecem em uma única linha, mesmo que transbordem o container.</li>
-                        <li><b>wrap: </b>Os itens quebram para a próxima linha quando necessário (de cima para baixo).</li>
-                        <li><b>wrap-reverse: </b>Os itens também quebram, mas as linhas são empilhadas de baixo para cima (ordem reversa).</li>
-                    </ul>
-                </div>
-                <div>
-                    <h5>gap</h5>
-                    <p>
-                        A propriedade gap em CSS é usada para definir o espaçamento entre os itens dentro de containers com display: flex, grid ou inline-flex/grid.<br>
-                        Ela substitui a necessidade de usar margin-right, margin-bottom, etc., entre os itens — deixando o código mais limpo e fácil de manter.
-                    </p>
-                    <h6>
-                        display: flex;<br>
-                        gap: 16px;
-                    </h6>
-                </div>
+                <p>
+                    No CSS, a propriedade display: block; é usada para definir um elemento como um bloco, o que significa que o elemento ocupará toda a largura disponível em seu contêiner pai (por padrão) e terá uma quebra de linha antes e depois dele. <br>
+                    Isso faz com que o elemento seja exibido em uma nova linha, empurrando qualquer outro conteúdo que esteja ao lado para baixo.
+                </p>
+                <h5>Características de um elemento com display: block;</h5>
+                <ul>
+                    <li>Ocupação de largura total: </li>
+                    <p>Por padrão, o elemento ocupa 100% da largura do seu contêiner pai.</p>
+                    <li>Quebra de linha: </li>
+                    <p>Um elemento com display: block; começa em uma nova linha e empurra outros elementos para baixo.</p>
+                    <li>Pode ter largura e altura definidas: </li>
+                    <p>Diferente de elementos em linha, como "span", elementos de bloco podem ter propriedades de width e height ajustadas.</p>
+                </ul>
+                <h6>display: block;</h6>
+                <p>
+                    Neste exemplo, o elemento "div" será exibido como um bloco. 
+                    Elementos como "div", "p", "h1" até "h6", e "section" já têm o comportamento de bloco por padrão.
+                </p>
+                <p>
+                    Esse comportamento é útil para organizar a estrutura da página de maneira mais clara e para quando você precisa de um elemento que "quebre" a linha para criar um layout mais organizado.
+                </p>
             </div>
         </div>
+
         <div class="grid">
             <h2>Display: Grid</h2>
             <p>
