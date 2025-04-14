@@ -48,7 +48,7 @@
         background-color: var(--title-h1);
         border-radius: 25px;
     }
-/* -------------------- DISPLAY -------------------- */
+/* -------------------- FLEX -------------------- */
 #display{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -103,7 +103,7 @@
                 background-color: yellowgreen;
                 border-radius: 25px;
             }
-/* --------------------  -------------------- */
+/* -------------------- GRID -------------------- */
     .grid{
         margin: 0 40px 0 20px;
     }
@@ -137,6 +137,9 @@
                 .grid ul ul{
                     margin-left: 40px;
                 }
+                .grid div div div ul{
+                    margin-left: 25px;
+                }
             .grid h4{
                 display: flex;
                 justify-content: center;
@@ -161,3 +164,4 @@
                 background-color: yellowgreen;
                 border-radius: 25px;
             }
+/* -------------------- NONE -------------------- */
