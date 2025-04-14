@@ -256,10 +256,90 @@
                             place-items: center;
                         </h6>
                     </div>
+                    <p><b>Exemplo prático completo:</b></p>
+                    <h6> 
+                        display: grid;<br>
+                        grid-template-columns: repeat(2, 150px);<br>
+                        grid-template-rows: repeat(2, 100px);<br>
+                        place-items: center;<br>
+                        gap: 10px;
+                    </h6>
+                    <p>Esse código vai centralizar os itens tanto na horizontal quanto na vertical, dentro de cada célula do grid.</p>
                 </div>
                 <div>
                     <h5>justify-content, align-content e place-content</h5>
-
+                    <p>
+                        Essas propriedades são parecidas com justify-items e align-items, mas têm um foco diferente:
+                        Elas alinham o grid inteiro dentro do container, e não os itens dentro das células.
+                    </p>
+                    <div>
+                        <p><b>justify-content: </b>Alinha o grid como um todo no eixo horizontal (esquerda ↔ direita), dentro do container.</p>
+                        <h6>
+                            display: grid;<br>
+                            justify-content: center;
+                        </h6>
+                        <p><b>align-content: </b>Alinha o grid no eixo vertical (cima ↕ baixo), dentro do container.</p>
+                        <h6>
+                            display: grid;<br>
+                            align-content: space-between;
+                        </h6>
+                        <p>Valores comuns:</p>
+                        <ul>
+                            <li><b>start: </b>alinha o grid à esquerda</li>
+                            <li><b>center: </b>centraliza o grid</li>
+                            <li><b>end: </b>alinha o grid à direita</li>
+                            <li><b>space-between: </b>distribui o espaço entre as colunas</li>
+                            <li><b>space-around: </b>espaço igual nas laterais internas</li>
+                            <li><b>space-evenly: </b>espaço totalmente uniforme em volta</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p><b>place-content: </b>É um shorthand que une align-content e justify-content.</p>
+                        <h6>
+                            display: grid;<br>
+                            place-content: center; /* centro vertical e horizontal */
+                        </h6>
+                        <h6>
+                            place-content: start end; /* align-content: start; justify-content: end */
+                        </h6>
+                    </div>
+                </div>
+                <div>
+                    <h5>grid-auto-rows, grid-auto-columns e grid-auto-flow</h5>
+                    <p>Elas controlam o que acontece com os itens que não têm posição explícita definida — ou seja, quando você não especifica linhas ou colunas no grid-template-*, essas propriedades entram em ação.</p>
+                    <div>
+                        <p><b>grid-auto-rows: </b>Define a altura padrão das linhas geradas automaticamente, quando você adiciona mais itens do que linhas previstas no grid-template-rows.</p>
+                        <h6>
+                            display: grid;<br>
+                            grid-auto-rows: 150px;
+                        </h6>
+                        <p>
+                            <b>Exemplo: </b>Se você tem grid-template-rows: 100px; e insere mais de 1 linha de itens, a primeira terá 100px e as próximas vão usar o valor de grid-auto-rows (150px).
+                        </p>
+                    </div>
+                    <div>
+                        <p><b>grid-auto-columns: </b>Define a largura padrão das colunas geradas automaticamente, caso o layout precise criar colunas extras.</p>
+                        <h6>
+                            display: grid;<br>
+                            grid-auto-columns: 200px;
+                        </h6>
+                        <p><b>Exemplo: </b>você colocou os itens com grid-auto-flow: column, e o layout precisa criar novas colunas além das definidas — aí ele usa esse valor.</p>
+                    </div>
+                    <div>
+                        <p><b>grid-auto-flow: </b>Define a direção do preenchimento automático dos itens no grid:</p>
+                        <h6>
+                            display: grid;<br>
+                            grid-auto-flow: row; /* padrão */
+                        </h6>
+                        <div>
+                            <p>Valores Comuns:</p>
+                            <ul>
+                                <li><b>row (padrão): </b>os itens são inseridos linha por linha</li>
+                                <li><b>column: </b>os itens são inseridos coluna por coluna</li>
+                                <li><b>row dense ou column dense: </b>o navegador tenta preencher os “buracos” do grid, se houver espaços sobrando</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
