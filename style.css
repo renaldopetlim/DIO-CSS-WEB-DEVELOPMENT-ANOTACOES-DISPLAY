@@ -78,7 +78,7 @@
                 padding: 4px 0 4px 0;
             }
                 .flex li{
-                    margin: 0 0 0 15px;
+                    margin: 0 0 3px 15px;
                 }
             .flex h4{
                 display: flex;
@@ -129,7 +129,7 @@
                 padding: 4px 0 4px 0;
             }
                 .grid li{
-                    margin: 0 0 0 15px;
+                    margin: 0 0 3px 15px;
                 }
                 .grid ul p{
                     margin: 3px 0 0 25px;
