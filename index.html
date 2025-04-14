@@ -142,7 +142,7 @@
             <div>
                 <h4>Propriedades:</h4>
                 <div>
-                    <h5>Template Columns</h5>
+                    <h5>grid-template-columns</h5>
                     <p>
                         A propriedade grid-template-columns em CSS é usada para definir o número de colunas e o tamanho de cada uma dentro de um container com display: grid.
                     </p>
@@ -150,27 +150,46 @@
                     <ul>
                         <li><b>px: </b>pixels</li>
                         <li><b>%: </b>porcentagem</li>
-                        <li><b>fr: </b>fração do espaço disponível</li>
+                        <li><b>fr:</b> significa "fração do espaço disponível".</li>
+                            <p>
+                                É uma unidade exclusiva do CSS Grid usada para dividir o espaço restante entre colunas (ou linhas) de forma proporcional.
+                            </p>
+                            <h6>grid-template-columns: 1fr 2fr 1fr;</h6>
+                            <p>O espaço total disponível é dividido em 4 partes:</p>
+                            <ul>
+                                <li>A primeira coluna recebe 1 parte.</li>
+                                <li>A segunda recebe 2 partes.</li>
+                                <li>A terceira recebe 1 parte.</li>
+                            </ul>
                         <li><b>auto: </b>tamanho automático baseado no conteúdo</li>
-                        <li><b>min-content</b></li>
+                        <li><b>min-content:</b></li>
                             <p>
                                 Define o tamanho mínimo necessário para que o conteúdo não quebre ou transborde.<br>
                                 O elemento só vai ocupar o espaço que ele realmente precisa (por exemplo, o menor tamanho de uma palavra sem quebrar).
                             </p>
                             <h6>grid-template-columns: min-content;</h6>
-                            <p>se o conteúdo for uma palavra longa, ele só vai ter largura suficiente pra caber essa palavra sem quebrar.</p>
-                        <li><b>max-content: </b></li>
+                            <p>Se o conteúdo for uma palavra longa, ele só vai ter largura suficiente pra caber essa palavra sem quebrar.</p>
+                        <li><b>max-content:</b></li>
                             <p>
                                 Define o tamanho máximo que o conteúdo pode ocupar sem quebrar.<br>
                                 Ele estica até mostrar todo o conteúdo em uma linha, sem cortar nem dividir.
                             </p>
                             <h6>grid-template-columns: max-content;</h6>
                             <p>Se tiver várias palavras, ele vai esticar a célula até mostrar tudo em uma linha só, sem quebra.</p>
-                        <li><b>min-content() :</b></li>
+                        <li><b>min-content():</b></li>
                             <p>Define um intervalo de tamanho entre um mínimo e um máximo.</p>
                             <h6>grid-template-columns: minmax(200px, 1fr);</h6>
                             <p>“Essa coluna deve ter no mínimo 200px, mas pode crescer até ocupar 1fr do espaço, se sobrar.”</p>
                     </ul>
+                </div>
+                <div>
+                    <h5>grid-template-rows</h5>
+                    <p>
+                        O grid-template-rows, é irmão do grid-template-columns. <br>
+                        Como o nome já diz, ele controla as linhas do grid, em vez das colunas.<br>
+                        Pode ser utilizado com as mesmas unidades do grid-template-rows.
+                    </p>
+                    <h6>grid-template-rows: valor1 valor2 valor3 ...;</h6>
                 </div>
             </div>
         </div>
