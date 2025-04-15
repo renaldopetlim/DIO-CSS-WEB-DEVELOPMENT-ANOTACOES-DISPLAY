@@ -311,7 +311,7 @@
         .inblock ul li{
             margin: 3px 0 3px 15px;
         }
-/* --------------------  -------------------- */
+/* -------------------- HR -------------------- */
 #hr{
     margin: 5px 0 5px 0;
     border: none;
@@ -319,3 +319,194 @@
     background-color: darkred;
 }
 /* -------------------- STATIC -------------------- */
+.static{
+    margin: 4px 40px 0 20px;
+}
+    .static div{
+        display: flex;
+        justify-content: center;
+    }
+        .static h2{
+            display: flex;
+            justify-content: center;
+            margin: 6px 40px 6px 40px;
+            padding: 4px 40px 4px 40px;
+            width: 25vw;
+            background-color: var(--title-h2);
+            border-radius: 25px;
+        }
+    .static h4{
+        margin: 3px 25px 3px 30px;
+        padding: 2px 20px 2px 20px;
+        width: fit-content;
+        background-color: var(--title-h4);
+        border-radius: 25px;
+    }
+        .static ul li{
+            margin: 3px 0 3px 15px;
+        }
+/* -------------------- RELATIVE -------------------- */
+.relative{
+    margin: 4px 40px 0 20px;
+}
+    .relative div{
+        display: flex;
+        justify-content: center;
+    }
+        .relative h2{
+            display: flex;
+            justify-content: center;
+            margin: 6px 40px 6px 40px;
+            padding: 4px 40px 4px 40px;
+            width: 28vw;
+            background-color: var(--title-h2);
+            border-radius: 25px;
+        }
+    .relative h4{
+        margin: 3px 25px 3px 30px;
+        padding: 2px 20px 2px 20px;
+        width: fit-content;
+        background-color: var(--title-h4);
+        border-radius: 25px;
+    }
+        .relative ul li{
+            margin: 3px 0 3px 15px;
+        }
+/* -------------------- ABSOLUTE -------------------- */
+.absolute{
+    margin: 4px 40px 0 20px;
+}
+    .absolute div{
+        display: flex;
+        justify-content: center;
+    }
+        .absolute h2{
+            display: flex;
+            justify-content: center;
+            margin: 6px 40px 6px 40px;
+            padding: 4px 40px 4px 40px;
+            width: 28vw;
+            background-color: var(--title-h2);
+            border-radius: 25px;
+        }
+    .absolute h4{
+        margin: 3px 25px 3px 30px;
+        padding: 2px 20px 2px 20px;
+        width: fit-content;
+        background-color: var(--title-h4);
+        border-radius: 25px;
+    }
+        .absolute ul li{
+            margin: 3px 0 3px 15px;
+        }
+    .absolute h5{
+        margin: 3px 25px 3px 30px;
+        padding: 2px 20px 2px 20px;
+        width: fit-content;
+        background-color: var(--title-h5);
+        border-radius: 25px;
+    }
+/* -------------------- FIXED -------------------- */
+.fixed{
+    margin: 4px 40px 0 20px;
+}
+    .fixed div{
+        display: flex;
+        justify-content: center;
+    }
+        .fixed h2{
+            display: flex;
+            justify-content: center;
+            margin: 6px 40px 6px 40px;
+            padding: 4px 40px 4px 40px;
+            width: 25vw;
+            background-color: var(--title-h2);
+            border-radius: 25px;
+        }
+    .fixed h4{
+        margin: 3px 25px 3px 30px;
+        padding: 2px 20px 2px 20px;
+        width: fit-content;
+        background-color: var(--title-h4);
+        border-radius: 25px;
+    }
+        .fixed ul li{
+            margin: 3px 0 3px 15px;
+        }
+/* -------------------- STICKY -------------------- */
+.sticky{
+    margin: 4px 40px 0 20px;
+}
+    .sticky div{
+        display: flex;
+        justify-content: center;
+    }
+        .sticky h2{
+            display: flex;
+            justify-content: center;
+            margin: 6px 40px 6px 40px;
+            padding: 4px 40px 4px 40px;
+            width: 25vw;
+            background-color: var(--title-h2);
+            border-radius: 25px;
+        }
+    .sticky h4{
+        margin: 3px 25px 3px 30px;
+        padding: 2px 20px 2px 20px;
+        width: fit-content;
+        background-color: var(--title-h4);
+        border-radius: 25px;
+    }
+        .sticky ul li{
+            margin: 3px 0 3px 15px;
+        }
+    .sticky h5{
+        margin: 3px 25px 3px 30px;
+        padding: 2px 20px 2px 20px;
+        width: fit-content;
+        background-color: var(--title-h5);
+        border-radius: 25px;
+    }
+/* -------------------- Z-INDEX -------------------- */
+.z-index{
+    margin: 4px 40px 0 20px;
+}
+    .z-index div{
+        display: flex;
+        justify-content: center;
+    }
+        .z-index h2{
+            display: flex;
+            justify-content: center;
+            margin: 6px 40px 6px 40px;
+            padding: 4px 40px 4px 40px;
+            width: 25vw;
+            background-color: var(--title-h2);
+            border-radius: 25px;
+        }
+    .z-index h4{
+        margin: 3px 25px 3px 30px;
+        padding: 2px 20px 2px 20px;
+        width: fit-content;
+        background-color: var(--title-h4);
+        border-radius: 25px;
+    }
+        .z-index ul li{
+            margin: 3px 0 3px 15px;
+        }
+    .z-index h5{
+        margin: 3px 25px 3px 30px;
+        padding: 2px 20px 2px 20px;
+        width: fit-content;
+        background-color: var(--title-h5);
+        border-radius: 25px;
+    }
+/* -------------------- LI-1 -------------------- */
+.li-1{
+    display: flex;
+    flex-direction: column;
+}
+    .li-1 ul{
+        margin: 0 0 0 40px;
+    }
+/* --------------------  -------------------- */
