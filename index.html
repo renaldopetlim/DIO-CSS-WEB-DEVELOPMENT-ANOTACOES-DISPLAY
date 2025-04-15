@@ -426,126 +426,130 @@
     <hr id="hr">
     
     <article id="positions">
-        <div class="static">
-            <div>
-                <h2>Position: Static</h2>
-            </div>
-            <p>
-                É o comportamento natural dos elementos em uma página web. 
-                Quando um elemento está com position: static (ou sem nenhuma posição definida), ele é exibido de acordo com o fluxo normal do HTML, ou seja, um abaixo do outro, da esquerda para a direita (em textos ou blocos).
-            </p>
-            <h4>Características principais:</h4>
-            <ul>
-                <li>É o valor padrão, ou seja, se você não definir nenhuma posição, o navegador assume static.</li>
-                <li>O elemento não pode ser movido usando top, right, bottom ou left. Esses valores não têm efeito com static.</li>
-            </ul>
-        </div>
-        <div class="relative">
-            <div>
-                <h2>Position: Relative</h2>
-            </div>
-            <p>
-                Quando um elemento tem position: relative, ele permanece no fluxo normal da página (ou seja, ocupa seu espaço original), mas pode ser movido usando as propriedades top, right, bottom e left.
-            </p>
-            <h4>Características principais:</h4>
-            <ul>
-                <li>O elemento mantém seu espaço original na página.</li>
-                <li>Pode ser deslocado em relação à sua posição original.</li>
-                <li>É muito útil quando você quer fazer pequenos ajustes na posição ou criar referência para elementos absolute.</li>
-            </ul>
-        </div>
-        <div class="absolute">
-            <div>
-                <h2>Position: Absolute</h2>
-            </div>
-            <p>
-                Quando um elemento tem position: absolute, ele sai do fluxo normal da página, ou seja, não ocupa espaço como os elementos static ou relative.<br>
-                Ele é posicionado relativo ao primeiro elemento ancestral (pai, avô, etc.) que tem position: relative, absolute ou fixed.<br>
-                Se não encontrar nenhum ancestral com position definido, ele será posicionado relativo ao "html" (ou ao body).
-            </p>
-            <h4>Características principais:</h4>
-            <ul>
-                <li>Sai do fluxo: não afeta nem é afetado por outros elementos ao redor.</li>
-                <li>Pode ser posicionado com top, right, bottom e left.</li>
-                <li>Se move com base no elemento pai com posição definida (relative, absolute, fixed ou sticky).</li>
-            </ul> 
-            <div class="li-1">
-                <h5>Dica:</h5>
+        <div class="positions">
+            <div class="static">
+                <div>
+                    <h2>Position: Static</h2>
+                </div>
                 <p>
-                    Use absolute quando você quiser colocar algo em cima, sobreposto, ou encaixado em um ponto específico de um container. 
-                    Por exemplo:
+                    É o comportamento natural dos elementos em uma página web. 
+                    Quando um elemento está com position: static (ou sem nenhuma posição definida), ele é exibido de acordo com o fluxo normal do HTML, ou seja, um abaixo do outro, da esquerda para a direita (em textos ou blocos).
                 </p>
+                <h4>Características principais:</h4>
+                <ul>
+                    <li>É o valor padrão, ou seja, se você não definir nenhuma posição, o navegador assume static.</li>
+                    <li>O elemento não pode ser movido usando top, right, bottom ou left. Esses valores não têm efeito com static.</li>
+                </ul>
+            </div>
+            <div class="relative">
+                <div>
+                    <h2>Position: Relative</h2>
+                </div>
+                <p>
+                    Quando um elemento tem position: relative, ele permanece no fluxo normal da página (ou seja, ocupa seu espaço original), mas pode ser movido usando as propriedades top, right, bottom e left.
+                </p>
+                <h4>Características principais:</h4>
+                <ul>
+                    <li>O elemento mantém seu espaço original na página.</li>
+                    <li>Pode ser deslocado em relação à sua posição original.</li>
+                    <li>É muito útil quando você quer fazer pequenos ajustes na posição ou criar referência para elementos absolute.</li>
+                </ul>
+            </div>
+            <div class="absolute">
+                <div>
+                    <h2>Position: Absolute</h2>
+                </div>
+                <p>
+                    Quando um elemento tem position: absolute, ele sai do fluxo normal da página, ou seja, não ocupa espaço como os elementos static ou relative.<br>
+                    Ele é posicionado relativo ao primeiro elemento ancestral (pai, avô, etc.) que tem position: relative, absolute ou fixed.<br>
+                    Se não encontrar nenhum ancestral com position definido, ele será posicionado relativo ao "html" (ou ao body).
+                </p>
+                <h4>Características principais:</h4>
+                <ul>
+                    <li>Sai do fluxo: não afeta nem é afetado por outros elementos ao redor.</li>
+                    <li>Pode ser posicionado com top, right, bottom e left.</li>
+                    <li>Se move com base no elemento pai com posição definida (relative, absolute, fixed ou sticky).</li>
+                </ul> 
                 <div class="li-1">
+                    <h5>Dica:</h5>
+                    <p>
+                        Use absolute quando você quiser colocar algo em cima, sobreposto, ou encaixado em um ponto específico de um container. 
+                        Por exemplo:
+                    </p>
+                    <div class="li-1">
+                        <ul>
+                            <li>Ícones no canto de uma imagem.</li>
+                            <li>Balões de fala.</li>
+                            <li>Pop-ups simples.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="positions">
+            <div class="fixed">
+                <div>
+                    <h2>Position: Fixed</h2>
+                </div>
+                <p>
+                    Um elemento com position: fixed é removido do fluxo normal da página e posicionado em relação à janela de visualização (viewport), ou seja, a tela do navegador.
+                    Ele não se move quando você rola a página, mantendo-se fixo no mesmo lugar.
+                </p>
+                <h4>Características principais:</h4>
+                <ul>
+                    <li>Posicionado com base na viewport (não depende de elementos pai).</li>
+                    <li>Usa top, right, bottom, left para se posicionar.</li>
+                    <li>Permanece fixo mesmo ao rolar a página.</li>
+                    <li>Não ocupa espaço no layout (sai do fluxo).</li>
+                </ul>
+            </div>
+            <div class="sticky">
+                <div>
+                    <h2>Position: Sticky</h2>
+                </div>
+                <p>
+                    O sticky é uma mistura de relative com fixed:
+                </p>
+                <ul>
+                    <li>O elemento começa como relative (segue o fluxo da página).</li>
+                    <li>Mas, ao rolar a página até atingir um certo ponto (como top: 0), ele "gruda" na posição, como se fosse fixed.</li>
+                </ul>
+                <h4>Características principais:</h4>
+                <ul>
+                    <li>Depende de um valor como top, left, right ou bottom pra funcionar.</li>
+                    <li>O elemento só “gruda” dentro do limite do seu elemento pai.</li>
+                    <li>Funciona bem para menus de seção, cabeçalhos de tabela, etc.</li>
+                </ul>
+                <div class="li-1">
+                    <h5>Dica:</h5>
                     <ul>
-                        <li>Ícones no canto de uma imagem.</li>
-                        <li>Balões de fala.</li>
-                        <li>Pop-ups simples.</li>
+                        <li>O sticky precisa que o elemento pai tenha altura suficiente pra ele “rolar”.</li>
+                        <li>Ele pode não funcionar se o pai estiver com overflow: hidden ou overflow: auto.</li>
+                        <li>Ideal para títulos de seções, menus flutuantes dentro de áreas específicas e tabelas fixas.</li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="fixed">
-            <div>
-                <h2>Position: Fixed</h2>
-            </div>
-            <p>
-                Um elemento com position: fixed é removido do fluxo normal da página e posicionado em relação à janela de visualização (viewport), ou seja, a tela do navegador.
-                Ele não se move quando você rola a página, mantendo-se fixo no mesmo lugar.
-            </p>
-            <h4>Características principais:</h4>
-            <ul>
-                <li>Posicionado com base na viewport (não depende de elementos pai).</li>
-                <li>Usa top, right, bottom, left para se posicionar.</li>
-                <li>Permanece fixo mesmo ao rolar a página.</li>
-                <li>Não ocupa espaço no layout (sai do fluxo).</li>
-            </ul>
-        </div>
-        <div class="sticky">
-            <div>
-                <h2>Position: Sticky</h2>
-            </div>
-            <p>
-                O sticky é uma mistura de relative com fixed:
-            </p>
-            <ul>
-                <li>O elemento começa como relative (segue o fluxo da página).</li>
-                <li>Mas, ao rolar a página até atingir um certo ponto (como top: 0), ele "gruda" na posição, como se fosse fixed.</li>
-            </ul>
-            <h4>Características principais:</h4>
-            <ul>
-                <li>Depende de um valor como top, left, right ou bottom pra funcionar.</li>
-                <li>O elemento só “gruda” dentro do limite do seu elemento pai.</li>
-                <li>Funciona bem para menus de seção, cabeçalhos de tabela, etc.</li>
-            </ul>
-            <div class="li-1">
-                <h5>Dica:</h5>
+            <div class="z-index">
+                <div>
+                    <h2>Z-Index</h2>
+                </div>
+                <p>
+                    O z-index define a ordem de empilhamento (stacking order) dos elementos no eixo Z (profundidade), ou seja, qual elemento fica na frente ou atrás de outro quando eles se sobrepõem.
+                </p>
+                <h4>Características principais:</h4>
                 <ul>
-                    <li>O sticky precisa que o elemento pai tenha altura suficiente pra ele “rolar”.</li>
-                    <li>Ele pode não funcionar se o pai estiver com overflow: hidden ou overflow: auto.</li>
-                    <li>Ideal para títulos de seções, menus flutuantes dentro de áreas específicas e tabelas fixas.</li>
+                    <li>Só funciona em elementos que têm position diferente de static (relative, absolute, fixed, ou sticky).</li>
+                    <li>Quanto maior o valor do z-index, mais na frente o elemento fica.</li>
+                    <li>Pode ter valores positivos, negativos ou zero.</li>
                 </ul>
-            </div>
-        </div>
-        <div class="z-index">
-            <div>
-                <h2>Z-Index</h2>
-            </div>
-            <p>
-                O z-index define a ordem de empilhamento (stacking order) dos elementos no eixo Z (profundidade), ou seja, qual elemento fica na frente ou atrás de outro quando eles se sobrepõem.
-            </p>
-            <h4>Características principais:</h4>
-            <ul>
-                <li>Só funciona em elementos que têm position diferente de static (relative, absolute, fixed, ou sticky).</li>
-                <li>Quanto maior o valor do z-index, mais na frente o elemento fica.</li>
-                <li>Pode ter valores positivos, negativos ou zero.</li>
-            </ul>
-            <div class="li-1">
-                <h5>Dica:</h5>
-                <ul>
-                    <li>Se dois elementos têm o mesmo z-index, o que vier por último no HTML fica na frente.</li>
-                    <li>Um z-index: -1 pode fazer um elemento ir atrás de tudo (até mesmo do fundo da página, dependendo do caso).</li>
-                    <li>Usar z-index com sabedoria evita bugs visuais, como botões que não clicam porque outro elemento está invisivelmente "em cima".</li>
-                </ul>
+                <div class="li-1">
+                    <h5>Dica:</h5>
+                    <ul>
+                        <li>Se dois elementos têm o mesmo z-index, o que vier por último no HTML fica na frente.</li>
+                        <li>Um z-index: -1 pode fazer um elemento ir atrás de tudo (até mesmo do fundo da página, dependendo do caso).</li>
+                        <li>Usar z-index com sabedoria evita bugs visuais, como botões que não clicam porque outro elemento está invisivelmente "em cima".</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </article>

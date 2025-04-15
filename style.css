@@ -318,9 +318,14 @@
     height: 2px;
     background-color: darkred;
 }
+/* -------------------- POSITION -------------------- */
+.positions{
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+}
 /* -------------------- STATIC -------------------- */
 .static{
-    margin: 4px 40px 0 20px;
+    margin: 4px 20px 0 20px;
 }
     .static div{
         display: flex;
@@ -347,7 +352,7 @@
         }
 /* -------------------- RELATIVE -------------------- */
 .relative{
-    margin: 4px 40px 0 20px;
+    margin: 4px 20px 0 20px;
 }
     .relative div{
         display: flex;
@@ -374,7 +379,7 @@
         }
 /* -------------------- ABSOLUTE -------------------- */
 .absolute{
-    margin: 4px 40px 0 20px;
+    margin: 4px 20px 0 20px;
 }
     .absolute div{
         display: flex;
@@ -408,7 +413,7 @@
     }
 /* -------------------- FIXED -------------------- */
 .fixed{
-    margin: 4px 40px 0 20px;
+    margin: 4px 20px 0 20px;
 }
     .fixed div{
         display: flex;
@@ -435,7 +440,7 @@
         }
 /* -------------------- STICKY -------------------- */
 .sticky{
-    margin: 4px 40px 0 20px;
+    margin: 4px 20px 0 20px;
 }
     .sticky div{
         display: flex;
@@ -469,7 +474,7 @@
     }
 /* -------------------- Z-INDEX -------------------- */
 .z-index{
-    margin: 4px 40px 0 20px;
+    margin: 4px 20px 0 20px;
 }
     .z-index div{
         display: flex;
