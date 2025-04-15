@@ -311,3 +311,11 @@
         .inblock ul li{
             margin: 3px 0 3px 15px;
         }
+/* --------------------  -------------------- */
+#hr{
+    margin: 5px 0 5px 0;
+    border: none;
+    height: 2px;
+    background-color: darkred;
+}
+/* -------------------- STATIC -------------------- */
