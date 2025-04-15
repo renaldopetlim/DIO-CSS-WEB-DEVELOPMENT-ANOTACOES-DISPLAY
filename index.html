@@ -125,6 +125,26 @@
                     </div>
                 </div>
             </div>
+            <div class="none">
+                <div>
+                    <h2>Display: None</h2>
+                </div>
+                <p>
+                    Em CSS, display: none; é uma propriedade usada para ocultar completamente um elemento da página, como se ele não existisse no HTML. <br>
+                    Ele não ocupa espaço no layout e não é renderizado no navegador, diferentemente de outras formas de esconder um elemento (como visibility: hidden, que esconde o conteúdo mas ainda ocupa espaço).
+                </p>
+                <h5>Características de um elemento com display: none;</h5>
+                <ul>
+                    <li>Remove o elemento da renderização: </li>
+                    <p>Ele não aparece visualmente nem ocupa espaço.</p>
+                    <li>Não pode ser interagido: </li>
+                    <p>O elemento deixa de fazer parte do fluxo do documento.</p>
+                    <li>Pode ser reexibido dinamicamente: </li>
+                    <p>Usando JavaScript ou alterando a regra de CSS, é possível "trazê-lo de volta".</p>
+                </ul>
+                <h6>display: none;</h6>
+                <p>Com isso, um elemento com a classe .menu ficará totalmente invisível e fora do layout da página.</p>
+            </div>
             <div class="block">
                 <div>
                     <h2>Display: Block</h2>
@@ -151,25 +171,34 @@
                     Esse comportamento é útil para organizar a estrutura da página de maneira mais clara e para quando você precisa de um elemento que "quebre" a linha para criar um layout mais organizado.
                 </p>
             </div>
-            <div class="none">
+            <div class="inline">
                 <div>
-                    <h2>Display: None</h2>
+                    <h2>Display: Inline</h2>
                 </div>
-                <p>
-                    Em CSS, display: none; é uma propriedade usada para ocultar completamente um elemento da página, como se ele não existisse no HTML. <br>
-                    Ele não ocupa espaço no layout e não é renderizado no navegador, diferentemente de outras formas de esconder um elemento (como visibility: hidden, que esconde o conteúdo mas ainda ocupa espaço).
-                </p>
-                <h5>Características de um elemento com display: none;</h5>
+                <p>Display: inline é um valor da propriedade display no CSS que faz com que o elemento se comporte como parte de uma linha de texto, como se fosse uma palavra ou letra dentro de um parágrafo.</p>
+                <h5>Comportamento do Inline</h5>
                 <ul>
-                    <li>Remove o elemento da renderização: </li>
-                    <p>Ele não aparece visualmente nem ocupa espaço.</p>
-                    <li>Não pode ser interagido: </li>
-                    <p>O elemento deixa de fazer parte do fluxo do documento.</p>
-                    <li>Pode ser reexibido dinamicamente: </li>
-                    <p>Usando JavaScript ou alterando a regra de CSS, é possível "trazê-lo de volta".</p>
+                    <li><b>Quebra de linha: </b>❌ Não quebra linha automaticamente.</li>
+                    <li><b>Largura e altura definidas: </b>❌ Não aceita width ou height (essas propriedades são ignoradas).</li>
+                    <li><b>Padding e margin: </b>✅ Só horizontal (esquerda e direita) funciona totalmente. Topo e base são limitados.</li>
+                    <li><b>Fluxo do documento: </b>	✅ Fica na mesma linha que outros elementos inline, se houver espaço.</li>
+                    <li><b>Exemplos nativos: </b>"span", "a", "strong", "em"</li>
                 </ul>
-                <h6>display: none;</h6>
-                <p>Com isso, um elemento com a classe .menu ficará totalmente invisível e fora do layout da página.</p>
+                <h6>Isso é um <span style="display: inline; background: yellow;">elemento inline</span> no meio do texto.</h6>
+                <p>Esse span não vai quebrar a linha, e vai se comportar como parte do texto corrido.</p>
+            </div>
+            <div class="inblock">
+                <div>
+                    <h2>Display: Inline-Block</h2>
+                </div>
+                <p>Display: inline-block é um tipo de exibição que combina características dos elementos inline e block.</p>
+                <h5>Comportamento do Inline-Block</h5>
+                <ul>
+                    <li><b>Quebra de linha automática: </b>❌ Não (fica ao lado de outros inline ou inline-block, se couber)</li>
+                    <li><b>Aceita width e height: </b>✅ Sim</li>
+                    <li><b>Aceita margin e padding: </b>✅ Sim, completamente</li>
+                    <li><b>Fluxo do documento: </b>✅ Fica em linha, mas com comportamento de bloco</li>
+                </ul>
             </div>
         </div>
 
