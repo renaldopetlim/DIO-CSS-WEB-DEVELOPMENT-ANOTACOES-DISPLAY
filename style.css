@@ -164,54 +164,9 @@
                 background-color: yellowgreen;
                 border-radius: 25px;
             }
-/* -------------------- BLOCK -------------------- */
-    .block{
-        margin: 20px 40px 0 20px;
-    }
-        .block div{
-            display: flex;
-            justify-content: center;
-        }
-            .block h2{
-                display: flex;
-                justify-content: center;
-                margin: 6px 40px 6px 40px;
-                padding: 4px 40px 4px 40px;
-                width: 25vw;
-                background-color: var(--title-h2);
-                border-radius: 25px;
-            }
-        .block h5{
-            margin: 6px 25px 6px 30px;
-            padding: 2px 20px 2px 20px;
-            width: fit-content;
-            background-color: var(--title-h5);
-            border-radius: 25px;
-        }
-        .block ul{
-            padding: 4px 0 4px 0;
-        }
-            .block ul li{
-                margin: 3px 0 3px 15px;
-                font-weight: bold;
-            }
-            .block ul p{
-                margin: 3px 0 0 25px;
-            }
-        .block h6{
-            margin: 3px 0 0 40px; 
-            padding: 0 0 0 15px;
-            padding: 3px 15px 3px 15px;
-            width: fit-content;
-            background-color: yellowgreen;
-            border-radius: 25px;
-        }
-        .block p{
-            margin: 5px 0 0 0;
-        }
 /* -------------------- NONE -------------------- */
     .none{
-        margin: 20px 40px 0 20px;
+        margin: 10px 40px 0 20px;
     }
         .none div{
             display: flex;
@@ -253,4 +208,106 @@
         }
         .none p{
             margin: 5px 0 0 0;
+        }
+/* -------------------- BLOCK -------------------- */
+.block{
+    margin: 20px 40px 0 20px;
+}
+    .block div{
+        display: flex;
+        justify-content: center;
+    }
+        .block h2{
+            display: flex;
+            justify-content: center;
+            margin: 6px 40px 6px 40px;
+            padding: 4px 40px 4px 40px;
+            width: 25vw;
+            background-color: var(--title-h2);
+            border-radius: 25px;
+        }
+    .block h5{
+        margin: 6px 25px 6px 30px;
+        padding: 2px 20px 2px 20px;
+        width: fit-content;
+        background-color: var(--title-h5);
+        border-radius: 25px;
+    }
+        .block ul li{
+            margin: 3px 0 3px 15px;
+            font-weight: bold;
+        }
+        .block ul p{
+            margin: 3px 0 0 25px;
+        }
+    .block h6{
+        margin: 6px 0 6px 40px; 
+        padding: 3px 15px 3px 15px;
+        width: fit-content;
+        background-color: yellowgreen;
+        border-radius: 25px;
+    }
+    .block p{
+        margin: 5px 0 0 0;
+    }
+/* -------------------- INLINE -------------------- */
+    .inline{
+        margin: 10px 40px 0 20px;
+    }
+    .inline div{
+        display: flex;
+        justify-content: center;
+    }
+        .inline h2{
+            display: flex;
+            justify-content: center;
+            margin: 6px 40px 6px 40px;
+            padding: 4px 40px 4px 40px;
+            width: 25vw;
+            background-color: var(--title-h2);
+            border-radius: 25px;
+        }
+    .inline h5{
+        margin: 3px 25px 3px 30px;
+        padding: 2px 20px 2px 20px;
+        width: fit-content;
+        background-color: var(--title-h5);
+        border-radius: 25px;
+    }
+        .inline ul li{
+            margin: 3px 0 3px 15px;
+        }
+    .inline h6{
+        margin: 6px 0 6px 40px; 
+        padding: 3px 15px 3px 15px;
+        width: fit-content;
+        background-color: yellowgreen;
+        border-radius: 25px;
+    }
+/* -------------------- INLINE-BLOCK -------------------- */
+    .inblock{
+        margin: 10px 40px 0 20px;
+    }
+    .inblock div{
+        display: flex;
+        justify-content: center;
+    }
+        .inblock h2{
+            display: flex;
+            justify-content: center;
+            margin: 6px 40px 6px 40px;
+            padding: 4px 40px 4px 40px;
+            width: 25vw;
+            background-color: var(--title-h2);
+            border-radius: 25px;
+        }
+    .inblock h5{
+        margin: 3px 25px 3px 30px;
+        padding: 2px 20px 2px 20px;
+        width: fit-content;
+        background-color: var(--title-h5);
+        border-radius: 25px;
+    }
+        .inblock ul li{
+            margin: 3px 0 3px 15px;
         }
